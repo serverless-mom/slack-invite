@@ -12,6 +12,7 @@
       "runtime": "nodejs8",
       "location": "inline",
       "envVars": {},
+      "entryPoint": "",
       "wires": [
         []
       ]
@@ -30,7 +31,7 @@
       "x": 195,
       "y": 285,
       "name": "",
-      "path": "invite/{message}",
+      "path": "/invite/{email}",
       "method": "GET",
       "wires": [
         [
