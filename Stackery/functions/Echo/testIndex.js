@@ -1,6 +1,6 @@
 var rp = require('request-promise-native');
 
-module.exports = async request => {
+async function testLambda (request) {
   // Log the request to the console.
   console.dir(request);
 
@@ -30,3 +30,6 @@ module.exports = async request => {
 
   return response;
 };
+
+
+console.log(testLambda({pathParameters:{email:'robo@galifrey.com'}}))
