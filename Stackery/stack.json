@@ -22,16 +22,16 @@
     {
       "id": "83ffc009",
       "type": "http",
-      "x": 197.5,
+      "x": 212.5,
       "y": 235,
-      "width": 185,
+      "width": 215,
       "height": 260
     },
     {
       "id": "2103b1a9",
       "type": "restApiEndpoint",
-      "x": 195,
-      "y": 285,
+      "x": 215,
+      "y": 255,
       "name": "",
       "path": "/invite/{email}",
       "method": "GET",
