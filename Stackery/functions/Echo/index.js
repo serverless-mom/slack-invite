@@ -5,18 +5,12 @@ module.exports = async request => {
   console.dir(request);
 
   // Get the message sent in the endpoint path parameter
-  let message = request.pathParameters.email;
-
-  // Build a response.
-  let responseBody = `
-    <h4>You sent the following message:</h4>
-    <p>${message}</p>
-  `;
+  let email = request.pathParameters.email;
 
   var token = process.env.TOKEN
 
   let responseString = await rp(
-    `https://slack.com/api/users.admin.invite?token=${token}email=${message}`
+    `https://slack.com/api/users.admin.invite?token=${token}email=${email}`
   )
 
 
