@@ -11,7 +11,9 @@
       "timeout": 30,
       "runtime": "nodejs8",
       "location": "inline",
-      "envVars": {},
+      "envVars": {
+        "TOKEN": "${config.token}"
+      },
       "entryPoint": "",
       "wires": [
         []
